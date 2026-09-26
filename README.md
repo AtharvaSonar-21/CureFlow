@@ -452,110 +452,89 @@ CuraFlow/
 │   │   ├── main/
 │   │   │   ├── java/
 │   │   │   │   └── com/curaflow/
+│   │   │   │       ├── config/
 │   │   │   │       ├── controller/
-│   │   │   │       ├── service/
-│   │   │   │       ├── repository/
-│   │   │   │       ├── entity/
 │   │   │   │       ├── dto/
-│   │   │   │       ├── security/
+│   │   │   │       ├── entity/
 │   │   │   │       ├── exception/
-│   │   │   │       └── config/
-│   │   │   │
+│   │   │   │       ├── repository/
+│   │   │   │       ├── security/
+│   │   │   │       └── service/
 │   │   │   └── resources/
 │   │   │       └── application.properties
-│   │   │
 │   │   └── test/
-│   │
-│   └── pom.xml
+│   ├── pom.xml
+│   └── mvnw.cmd
 │
 ├── frontend/
 │   ├── src/
+│   │   ├── assets/
 │   │   ├── components/
+│   │   ├── hooks/
 │   │   ├── pages/
 │   │   ├── services/
-│   │   ├── hooks/
 │   │   ├── store/
-│   │   └── types/
-│   │
-│   └── package.json
+│   │   ├── types/
+│   │   └── utils/
+│   ├── index.html
+│   ├── package.json
+│   ├── tsconfig.json
+│   └── vite.config.ts
 │
 ├── docs/
-│
+│   └── architecture.md
+├── .gitignore
 └── README.md
 ```
 
+> 📘 **Full Architecture Specification**: Detailed system blueprints, security flow, UI design tokens, and database patterns are documented in [docs/architecture.md](docs/architecture.md).
+
 ---
 
-# 🚀 Development Roadmap
+# 🚀 Incremental Milestone Roadmap
 
-## Phase 1 — Project Setup
+CuraFlow is engineered incrementally following strict software engineering practices. Each milestone is runnable, verifiable, and Git-committable.
 
-* [ ] Create Spring Boot backend
-* [ ] Create React frontend
-* [ ] Configure MySQL
-* [ ] Configure Maven
-* [ ] Configure environment variables
-* [ ] Set up Git repository
+- [x] **1. Repository and project initialization**
+- [x] **2. Spring Boot backend setup**
+- [ ] **3. React + TypeScript frontend setup**
+- [ ] **4. MySQL and JPA configuration**
+- [ ] **5. Base backend architecture and exception handling**
+- [ ] **6. User and role entities**
+- [ ] **7. User registration**
+- [ ] **8. JWT authentication**
+- [ ] **9. Role-based authorization**
+- [ ] **10. Frontend authentication and protected routes**
+- [ ] **11. Department management**
+- [ ] **12. Doctor management**
+- [ ] **13. Staff management**
+- [ ] **14. Patient management**
+- [ ] **15. Appointment scheduling and availability**
+- [ ] **16. Medical records**
+- [ ] **17. Patient vitals**
+- [ ] **18. Prescriptions and laboratory reports**
+- [ ] **19. Pharmacy and inventory**
+- [ ] **20. Blood bank**
+- [ ] **21. Hospital equipment**
+- [ ] **22. Rooms and beds**
+- [ ] **23. Billing and payments**
+- [ ] **24. OpenAPI/Swagger documentation**
+- [ ] **25. Frontend application shell**
+- [ ] **26. Admin dashboard**
+- [ ] **27. Doctor dashboard**
+- [ ] **28. Staff dashboard**
+- [ ] **29. Pharmacist dashboard**
+- [ ] **30. Patient dashboard**
+- [ ] **31. Frontend CRUD/API integration**
+- [ ] **32. Backend and integration testing**
+- [ ] **33. Security hardening**
+- [ ] **34. Dockerization**
+- [ ] **35. GitHub Actions CI/CD**
+- [ ] **36. Final documentation and deployment preparation**
 
-## Phase 2 — Authentication & Security
-
-* [ ] User registration
-* [ ] Login
-* [ ] JWT authentication
-* [ ] Spring Security configuration
-* [ ] Role-based authorization
-* [ ] Password hashing
-* [ ] Protected APIs
-
-## Phase 3 — Core Hospital Management
-
-* [ ] Patient management
-* [ ] Doctor management
-* [ ] Staff management
-* [ ] Department management
-* [ ] Appointment management
-* [ ] Doctor availability
-
-## Phase 4 — Clinical Records
-
-* [ ] Medical records
-* [ ] Patient vitals
-* [ ] Prescriptions
-* [ ] Lab reports
-* [ ] Patient history
-
-## Phase 5 — Hospital Resources
-
-* [ ] Pharmacy inventory
-* [ ] Medicine batch tracking
-* [ ] Blood bank
-* [ ] Equipment management
-* [ ] Room and bed management
-
-## Phase 6 — Billing
-
-* [ ] Billing module
-* [ ] Invoice generation
-* [ ] Payment tracking
-* [ ] Billing history
-
-## Phase 7 — Dashboard & Reporting
-
-* [ ] Role-specific dashboards
-* [ ] Hospital statistics
-* [ ] Revenue reports
-* [ ] Inventory reports
-* [ ] Appointment analytics
-
-## Phase 8 — Production Improvements
-
-* [ ] Unit testing
-* [ ] Integration testing
-* [ ] API documentation with Swagger/OpenAPI
-* [ ] Docker
-* [ ] CI/CD
-* [ ] Cloud deployment
-* [ ] Logging and monitoring
+### Optional Extensions
+- [ ] **Kafka Notification System** (Appointment, billing, health events)
+- [ ] **WebSocket Real-time Chat** (Patient-staff communication)
 
 ---
 

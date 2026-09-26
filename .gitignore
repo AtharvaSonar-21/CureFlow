@@ -1,0 +1,95 @@
+﻿# ==============================================================================
+# CuraFlow - Global Git Ignore
+# Enterprise Clinical Operations & Hospital ERP
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Java & Maven (Backend)
+# ------------------------------------------------------------------------------
+**/target/
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+.mvn/timing.properties
+hs_err_pid*
+replay_pid*
+
+# ------------------------------------------------------------------------------
+# Node & Vite / React (Frontend)
+# ------------------------------------------------------------------------------
+**/node_modules/
+**/dist/
+**/build/
+.pnp
+.pnp.js
+.eslintcache
+.parcel-cache
+**/.vite/
+**/out/
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Secrets
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.env
+*.pem
+*.key
+*.cert
+*.pfx
+
+# ------------------------------------------------------------------------------
+# IDEs & Code Editors
+# ------------------------------------------------------------------------------
+# VS Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA / NetBeans / Eclipse
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+.settings/
+.classpath
+.project
+.factorypath
+bin/
+
+# ------------------------------------------------------------------------------
+# Operating System & Temporary Files
+# ------------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------------------------
+# Logs & Diagnostics
+# ------------------------------------------------------------------------------
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------------------------
+# Scratch & Milestone Docs (Local only, not pushed to GitHub)
+# ------------------------------------------------------------------------------
+docs/milestones
+*.milestone-01.md
+tmp/
+temp/
+scratch/
+*.tmp
